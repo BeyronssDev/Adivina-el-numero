@@ -133,8 +133,15 @@ body {
     font-family: "Fascinate Inline", system-ui;
     font-size: 25px;
     margin-left: 350px;
-   
 }
+
+#display-usuario{
+    height: 100px;
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 25px;
+    margin-left: 350px;
+}
+
 input{
     width: 200px;
     height: 40px;
