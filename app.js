@@ -1,13 +1,13 @@
-let Numero1 = Math.floor(Math.random() * 101);
+let Numero1 = Math.floor(Math.random()* 101);
 let userInput = 0;
 let intentos = 0;
 let salida = "BeyronssDev";
 
 
-function PlayGame() {
+function playGame() {
     userInput = parseInt(document.getElementById("text1").value);
 
-    if (userInput != Numero1) {
+    if (userInput !== Numero1) {
         salida = `${userInput} no es el numero a adivinar, intenta otra vez`;
         intentos++;
     }
@@ -21,8 +21,9 @@ function PlayGame() {
     document.getElementById("text1").select();
 }
 
-function ResetGame() {
+function resetGame() {
     Numero1 = Math.floor(Math.random()* 101);
     document.getElementById("display-numero").innerHTML = "?";
     document.getElementById("display-resultado").innerHTML = "A jugar!!";
+    document.getElementById("text1").focus();
 }

@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Adivina el Numero</title>
 </head>
+
 <body>ºº
     <div class="banner">
         <h1>ADIVINA EL NÚMERO</h1>
     </div>
-    
+
     <div class="info">
         <div class="logo">S</div>
-        <p class="parrafo">El juego consiste en que el ordenador pensará un número del 1 al 100 <br> y el jugador deberá adivinar ese número para ganar. Mucha suerte!!!!</p>
+        <p class="parrafo">El juego consiste en que el ordenador pensará un número del 1 al 100 <br> y el jugador deberá
+            adivinar ese número para ganar. Mucha suerte!!!!</p>
         <div class="logo">S</div>
-        
+
     </div>
     <div id="display-numero"></div>
     <br>
-    <div class="display-resultado"></div>
+    <div id="display-resultado"></div>
     <br>
     <input type="text" name="" id="text1" placeholder="Introduce numero">
-    <button class="button" onclick="PlayGame()">Jugar</button>
-    <button class="button" onclick="ResetGame()">Reset</button>
+    <button class="button" onclick="playGame()">Jugar</button>
+    <button class="button" onclick="resetGame()">Reset</button>
 
     <div id="packmandiv">
         <div class="pista">
-            <div class="luces"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="luces">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
             <div class="tras-come"></div>
-            <div class="packman"><div class="comecocos"></div></div>
-              <div class="fantasmas">
-                 <div class="fantasma tres"><div class="ojo"></div><div class="ojo"></div></div>
-               <div class="fantasma uno"><div class="ojo"></div><div class="ojo"></div></div>
-              <div class="fantasma dos"><div class="ojo"></div><div class="ojo"></div></div>
-           </div>
-           </div>
-        
+            <div class="packman">
+                <div class="comecocos"></div>
+            </div>
+            <div class="fantasmas">
+                <div class="fantasma tres">
+                    <div class="ojo"></div>
+                    <div class="ojo"></div>
+                </div>
+                <div class="fantasma uno">
+                    <div class="ojo"></div>
+                    <div class="ojo"></div>
+                </div>
+                <div class="fantasma dos">
+                    <div class="ojo"></div>
+                    <div class="ojo"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 

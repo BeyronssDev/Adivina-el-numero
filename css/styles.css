@@ -122,14 +122,23 @@ body {
 #display-numero{
     width: 50px;
     height: 40px;
+    text-align: center;
     font-size: 30px;
-    margin-left: 400px;
+    margin-left: 655px;
     border: 1px solid black;
 }
 
+#display-resultado{
+    height: 30px;
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 25px;
+    margin-left: 350px;
+   
+}
 input{
     width: 200px;
     height: 40px;
+    text-align: center;
     font-size: 25px;
 }
 
@@ -137,7 +146,7 @@ input{
 .info {
     display: inline;
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 300px;
     font-size: 25px;
 }
