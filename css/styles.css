@@ -1,0 +1,495 @@
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(fuentes/websymbols-regular-webfont.eot);
+    src: url(fuentes/websymbols-regular-webfont.eot?#idefix) format(embedded-opentype),
+        url(fuentes/websymbols-regular-webfont.woff) format(woff),
+        url(fuentes/websymbols-regular-webfont.ttf) format(truetype),
+        url(fuentes/websymbols-regular-webfont.svg#WebSymbolsRegular) format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Legorama";
+    src: url(/css/fuentes/Legorama.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(/img/fonsweb2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    width: 80%;
+    height: 100px;
+
+    border: 10px solid rgb(189, 16, 208);
+    box-shadow: 0px 0px 2px gray;
+    background: url(/img/bakbaner.png);
+    background-position: -200px, -200px;
+    margin: 20px auto;
+    overflow: hidden;
+    animation: buckBanner 10s linear;
+}
+
+@keyframes buckBanner {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -200px, -200px;
+    }
+}
+
+.banner h1 {
+    display: block;
+    width: 900px;
+    /* font-family: "Fascinate Inline", system-ui; */
+    font-family: "Legorama";
+    color: whitesmoke;
+    font-size: 120px;
+    font-weight: normal;
+    text-shadow: 1px 2px 1px black, 2px 3px 2px black;
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-left: 270px;
+    margin-bottom: 10px;
+    animation: showText 10s linear;
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-600%) scale(5, 5);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(600%) scale(5, 5);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(-600%) scale(5, 5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(1, 1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+
+.logo {
+    font-family: "webSymbolsRegular";
+    color: gray;
+    font-size: 40px;
+    padding: 20px;
+    animation: showLogo 5s infinite linear;
+}
+
+.logo:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+@keyframes showLogo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+#display-numero{
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 400px;
+    border: 1px solid black;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+}
+
+
+.info {
+    display: inline;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+
+
+.button {
+    width: 80px;
+    height: 40px;
+    margin: 15px;
+    background: rgb(189, 16, 208);
+    box-shadow: 0px, 0px, 2px purple, 0px 1px 3px purple, inset;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: aqua;
+    background: purple;
+    box-shadow: 0px, 0px, 2px purple, 0px 1px 3px purple, inset;
+}
+
+.parrafo {
+    font-family: "Fascinate Inline", system-ui;
+}
+
+#text1 {
+    margin-left: 580px;
+    margin-top: 60px;
+}
+
+/* #packmandiv {
+    margin-top: 90px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.pista {
+    background: #000;
+    border: 5px solid blue;
+    border-radius: 10px;
+    height: 160px;
+    margin: 25px 0;
+    padding: 30px 0 0;
+    box-shadow: 0 0 10px 5px rgba(48, 160, 255, .5);
+    position: relative;
+}
+
+.pista:before,
+.pista:after {
+    background: none repeat scroll 0 0 black;
+    content: "";
+    display: block;
+    height: 145px;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+}
+
+.pista:before {
+    left: -10px;
+}
+
+.pista:after {
+    right: -5px;
+}
+
+.luces span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .8);
+    margin: 45px 4%;
+}
+
+.packman {
+    animation: comecocos 10s infinite linear;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.comecocos {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    width: 1px;
+    height: 1px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid yellow;
+    border-left: 60px solid yellow;
+    border-bottom: 60px solid yellow;
+    border-radius: 60px;
+    z-index: 3;
+
+}
+
+.comecocos:after {
+    background: black;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: -10px;
+    position: absolute;
+    top: -40px;
+    width: 20px;
+    z-index: 5;
+}
+
+.comecocos:before {
+    border-color: yellow transparent yellow yellow;
+    border-radius: 60px 60px 60px 60px;
+    border-right: 60px solid transparent;
+    border-style: solid;
+    border-width: 60px;
+    content: "";
+    height: 1px;
+    left: -60px;
+    position: absolute;
+    top: -60px;
+    width: 1px;
+    z-index: -1;
+    animation: boca .95s infinite linear;
+}
+
+.tras-come {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 60px;
+    opacity: 1;
+    animation: tras-come 10s infinite linear;
+
+}
+
+.fantasmas {
+    left: 0;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    z-index: 1;
+    animation: fantasmas 10s infinite linear;
+}
+
+.fantasma {
+    border-radius: 50% 50% 0 0;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+
+}
+
+.fantasma:before,
+.fantasma:after {
+    content: '';
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 20px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    animation: patitas .5s infinite linear;
+}
+
+.fantasma:before {
+    left: 5px;
+}
+
+.fantasma:after {
+    right: 5px;
+}
+
+.uno {
+    background: red;
+    left: 150px;
+}
+
+.dos {
+    background: pink;
+    left: 220px;
+}
+
+.tres {
+    background: orange;
+    left: 80px;
+}
+
+.ojo {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 15px 0 0 0px;
+    border: 1px solid #000000;
+    border-radius: 100%;
+    animation: ojos 8s infinite linear;
+}
+
+.ojo:before {
+    content: '';
+    background: #000;
+    border-radius: 100%;
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 10px;
+}
+
+
+@keyframes comecocos {
+    0% {
+        left: -20%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes fantasmas {
+    0% {
+        left: -10%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes patitas {
+    0% {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+
+    25% {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    50% {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+
+    75% {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    100% {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+}
+
+@keyframes tras-come {
+    0% {
+        left: -10%;
+        width: 0%;
+    }
+
+    100% {
+        left: 0%;
+        width: 100%
+    }
+}
+
+@keyframes boca {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-18deg);
+    }
+
+    20% {
+        transform: rotate(-36deg);
+    }
+
+    30% {
+        transform: rotate(-54deg);
+    }
+
+    40% {
+        transform: rotate(-72deg);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    60% {
+        transform: rotate(-72deg);
+    }
+
+    70% {
+        transform: rotate(-54deg);
+    }
+
+    80% {
+        transform: rotate(-36deg);
+    }
+
+    90% {
+        transform: rotate(-18deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ojos {
+    0% {
+        transform: rotate(0deg);
+        margin-left: -5px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        margin-left: -5px;
+    }
+}
