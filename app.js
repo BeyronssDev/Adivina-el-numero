@@ -29,5 +29,7 @@ function resetGame() {
     Numero1 = Math.floor(Math.random()* 101);
     document.getElementById("display-numero").innerHTML = "?";
     document.getElementById("display-resultado").innerHTML = "A jugar!!";
+    document.getElementById("display-usuario").innerHTML = "";
     document.getElementById("text1").focus();
+    intentos = null;
 }

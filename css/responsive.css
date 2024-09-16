@@ -1,3 +1,5 @@
-@media(max-wdth:2500px) {
-    
+@media(max-wdth:1600px) {
+    .baner h1{
+        margin-left:0;
+    }
 }
