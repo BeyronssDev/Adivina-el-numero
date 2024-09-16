@@ -15,7 +15,7 @@ function playGame() {
     if (userInput == Numero1) {
         salida = `${userInput} Haz adivinado el numero!!`;
         document.getElementById("display-numero").innerHTML = Numero1;
-    }else if (playGame < Numero1) {
+    }else if (userInput < Numero1) {
         document.getElementById("display-usuario").innerHTML = "El número buscado es mayor.";
       } else {
         document.getElementById("display-usuario").innerHTML = "El número buscado es menor.";

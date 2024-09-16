@@ -30,7 +30,7 @@ body {
 }
 
 .banner {
-    width: 80%;
+    width: 60%;
     height: 100px;
 
     border: 10px solid rgb(189, 16, 208);
@@ -54,7 +54,7 @@ body {
 
 .banner h1 {
     display: block;
-    width: 900px;
+    width: 100%;
     /* font-family: "Fascinate Inline", system-ui; */
     font-family: "Legorama";
     color: whitesmoke;
@@ -63,13 +63,13 @@ body {
     text-shadow: 1px 2px 1px black, 2px 3px 2px black;
     letter-spacing: 2px;
     letter-spacing: 2px;
-    margin-top: 15px;
-    margin-left: 270px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-left: 23%;
+    margin-bottom: 1%;
     animation: showText 10s linear;
 }
 
-@keyframes showText {
+/* @keyframes showText {
     0% {
         transform: translateX(-600%) scale(5, 5);
         opacity: 1;
@@ -93,15 +93,21 @@ body {
         color: white;
         opacity: 1;
     }
+} */
+
+.info {
+    display: inline;
+    display: flex;
+    margin-top: 3%;
+    margin-left: 27%;
+    font-size: 25px;
 }
-
-
 
 .logo {
     font-family: "webSymbolsRegular";
     color: gray;
     font-size: 40px;
-    padding: 20px;
+    padding: 1%;
     animation: showLogo 5s infinite linear;
 }
 
@@ -120,11 +126,11 @@ body {
     }
 }
 #display-numero{
-    width: 50px;
+    width: 3%;
     height: 40px;
     text-align: center;
     font-size: 30px;
-    margin-left: 655px;
+    margin-left: 45%;
     border: 1px solid black;
 }
 
@@ -132,36 +138,31 @@ body {
     height: 30px;
     font-family: "Fascinate Inline", system-ui;
     font-size: 25px;
-    margin-left: 350px;
+    margin-left: 30%;
 }
 
 #display-usuario{
     height: 100px;
     font-family: "Fascinate Inline", system-ui;
     font-size: 25px;
-    margin-left: 350px;
+    margin-left: 30%;
 }
 
+#text1 {
+    margin-left: 35%;
+}
+
+
 input{
-    width: 200px;
-    height: 40px;
+    width: 10%;
+    height: 53px;
     text-align: center;
     font-size: 25px;
 }
 
-
-.info {
-    display: inline;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 300px;
-    font-size: 25px;
-}
-
-
 .button {
-    width: 80px;
-    height: 40px;
+    width: 6%;
+    height: 60px;
     margin: 15px;
     background: rgb(189, 16, 208);
     box-shadow: 0px, 0px, 2px purple, 0px 1px 3px purple, inset;
@@ -179,18 +180,10 @@ input{
     font-family: "Fascinate Inline", system-ui;
 }
 
-#text1 {
-    margin-left: 580px;
-    margin-top: 60px;
-}
 
-/* #packmandiv {
-    margin-top: 90px;
-} */
 
-* {
-    margin: 0;
-    padding: 0;
+#packmandiv {
+    margin-top: 5%;
 }
 
 html,
